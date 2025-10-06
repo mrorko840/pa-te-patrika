@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="bn">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,12 +9,15 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="/favicon.ico">
 </head>
+
 <body class="bg-gray-50 text-gray-900">
   <!-- Header (same) -->
   <header class="bg-white border-b">
     <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
       <a href="/" class="flex items-center gap-2">
-        <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l9 4.5v11L12 22l-9-4.5v-11L12 2z"/></svg>
+        <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2l9 4.5v11L12 22l-9-4.5v-11L12 2z" />
+        </svg>
         <span class="font-semibold text-lg">প তে পত্রিকা</span>
       </a>
       <nav class="hidden md:flex items-center gap-6">
@@ -53,7 +57,8 @@
       <section>
         <h2 class="text-xl font-semibold">আমরা কী তথ্য সংগ্রহ করি</h2>
         <ul class="list-disc pl-6 mt-2 space-y-1 text-gray-700">
-          <li>Facebook Login ব্যবহারকালে Meta থেকে প্রাপ্ত অ্যাক্সেস টোকেন (scope: পেইজে পোস্ট করার জন্য প্রয়োজনীয় অনুমতি)।</li>
+          <li>Facebook Login ব্যবহারকালে Meta থেকে প্রাপ্ত অ্যাক্সেস টোকেন (scope: পেইজে পোস্ট করার জন্য প্রয়োজনীয়
+            অনুমতি)।</li>
           <li>তোমার নির্বাচিত Facebook Page ID এবং নাম।</li>
           <li>পোস্টিং লগ (সময়, স্ট্যাটাস, ত্রুটি বার্তা)।</li>
         </ul>
@@ -69,12 +74,14 @@
 
       <section>
         <h2 class="text-xl font-semibold">ডেটা শেয়ারিং</h2>
-        <p class="mt-2">আমরা তোমার ব্যক্তিগত ডেটা তৃতীয় পক্ষের কাছে বিক্রি/বাণিজ্যিকভাবে হস্তান্তর করি না। আইনগত চাহিদা বা নিরাপত্তাজনিত কারণে প্রয়োজন হলে শেয়ার হতে পারে।</p>
+        <p class="mt-2">আমরা তোমার ব্যক্তিগত ডেটা তৃতীয় পক্ষের কাছে বিক্রি/বাণিজ্যিকভাবে হস্তান্তর করি না। আইনগত চাহিদা
+          বা নিরাপত্তাজনিত কারণে প্রয়োজন হলে শেয়ার হতে পারে।</p>
       </section>
 
       <section>
         <h2 class="text-xl font-semibold">ডেটা সংরক্ষণকাল</h2>
-        <p class="mt-2">অ্যাক্সেস টোকেন ও শিডিউল-সংশ্লিষ্ট তথ্য কেবল সেবাটি চালাতে যতদিন প্রয়োজন ততদিন সংরক্ষিত থাকে; নিষ্ক্রিয় হলে অথবা ডিলিট অনুরোধ পেলে মুছে ফেলা হয়।</p>
+        <p class="mt-2">অ্যাক্সেস টোকেন ও শিডিউল-সংশ্লিষ্ট তথ্য কেবল সেবাটি চালাতে যতদিন প্রয়োজন ততদিন সংরক্ষিত থাকে;
+          নিষ্ক্রিয় হলে অথবা ডিলিট অনুরোধ পেলে মুছে ফেলা হয়।</p>
       </section>
 
       <section>
@@ -86,7 +93,8 @@
 
       <section>
         <h2 class="text-xl font-semibold">যোগাযোগ</h2>
-        <p class="mt-2">ইমেল: <a class="text-indigo-600 underline" href="mailto:hemel6850@gmail.com">hemel6850@gmail.com</a></p>
+        <p class="mt-2">ইমেল: <a class="text-indigo-600 underline"
+            href="mailto:hemel6850@gmail.com">hemel6850@gmail.com</a></p>
       </section>
     </div>
   </main>
@@ -106,10 +114,11 @@
   <script>
     const now = new Date();
     document.getElementById("y").textContent = now.getFullYear();
-    document.getElementById("d").textContent = now.toISOString().slice(0,10);
+    document.getElementById("d").textContent = now.toISOString().slice(0, 10);
     document.getElementById("menuBtn").addEventListener("click", () => {
       document.getElementById("mobileMenu").classList.toggle("hidden");
     });
   </script>
 </body>
+
 </html>
