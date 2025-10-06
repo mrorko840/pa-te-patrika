@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="bn">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>প তে পত্রিকা — হোম</title>
+  <meta name="description" content="প তে পত্রিকা: বিশ্বস্ত সোর্স থেকে বাছাইকৃত খবরের স্বয়ংক্রিয় পোস্টিং সেবা।">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/favicon.ico">
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+  <!-- Header -->
+  <header class="bg-white border-b">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2">
+        <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2l9 4.5v11L12 22l-9-4.5v-11L12 2z" />
+        </svg>
+        <span class="font-semibold text-lg">প তে পত্রিকা</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="/" class="hover:text-indigo-600">Home</a>
+        <a href="/privacy" class="hover:text-indigo-600">Privacy</a>
+        <a href="/terms" class="hover:text-indigo-600">Terms</a>
+        <a href="/data-deletion" class="hover:text-indigo-600">Data Deletion</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden inline-flex items-center px-3 py-2 border rounded">
+        <span>Menu</span>
+      </button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t bg-white">
+      <nav class="max-w-6xl mx-auto px-4 py-2 flex flex-col gap-2">
+        <a href="/" class="py-2">Home</a>
+        <a href="/privacy" class="py-2">Privacy</a>
+        <a href="/terms" class="py-2">Terms</a>
+        <a href="/data-deletion" class="py-2">Data Deletion</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="max-w-6xl mx-auto px-4 py-10">
+    <section class="text-center">
+      <h1 class="text-3xl md:text-4xl font-bold">প তে পত্রিকা — Facebook Auto Post</h1>
+      <p class="mt-4 text-gray-600">
+        বিশ্বস্ত বাংলাদেশি সংবাদমাধ্যমের আর্টিকেলগুলোকে নিয়মিতভাবে সংগ্রহ, সংক্্ষেপণ করে আপনার Facebook পেইজে
+        স্বয়ংক্রিয়ভাবে পোস্ট করা—এটাই আমাদের লক্ষ্য।
+      </p>
+      <div class="mt-8 inline-flex items-center gap-3 bg-indigo-600 text-white px-6 py-3 rounded-lg">
+        <span>Connected App:</span>
+        <code class="bg-indigo-500/50 px-2 py-1 rounded">fb-news-autopost-api.vercel.app</code>
+      </div>
+    </section>
+
+    <section class="mt-12 grid md:grid-cols-3 gap-6">
+      <div class="bg-white border rounded-2xl p-6">
+        <h3 class="font-semibold text-lg">Why this site?</h3>
+        <p class="mt-2 text-gray-600">Facebook অ্যাপ রিভিউয়ের জন্য Privacy, Terms এবং Data Deletion URL প্রয়োজন।</p>
+      </div>
+      <div class="bg-white border rounded-2xl p-6">
+        <h3 class="font-semibold text-lg">Transparency</h3>
+        <p class="mt-2 text-gray-600">ব্যবহারকারীর ডেটা ব্যবহারের বিষয়ে স্পষ্ট বক্তব্য—GDPR/Meta নীতিমালা সামঞ্জস্য।</p>
+      </div>
+      <div class="bg-white border rounded-2xl p-6">
+        <h3 class="font-semibold text-lg">Lightweight</h3>
+        <p class="mt-2 text-gray-600">TailwindCSS সহ সম্পূর্ণ স্ট্যাটিক—দ্রুত লোড, সহজ ডিপ্লয়।</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-gray-600">© <span id="y"></span> প তে পত্রিকা. সর্বস্বত্ব সংরক্ষিত।</p>
+      <div class="flex items-center gap-4 text-sm">
+        <a href="/privacy" class="hover:text-indigo-600">Privacy</a>
+        <a href="/terms" class="hover:text-indigo-600">Terms</a>
+        <a href="/data-deletion" class="hover:text-indigo-600">Data Deletion</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    document.getElementById("menuBtn").addEventListener("click", () => {
+      const m = document.getElementById("mobileMenu");
+      m.classList.toggle("hidden");
+    });
+  </script>
+</body>
+
+</html>

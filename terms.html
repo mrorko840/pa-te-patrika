@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terms of Service — প তে পত্রিকা</title>
+  <meta name="robots" content="noindex,follow">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/favicon.ico">
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Header -->
+  <header class="bg-white border-b">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2">
+        <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l9 4.5v11L12 22l-9-4.5v-11L12 2z"/></svg>
+        <span class="font-semibold text-lg">প তে পত্রিকা</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="/" class="hover:text-indigo-600">Home</a>
+        <a href="/privacy" class="hover:text-indigo-600">Privacy</a>
+        <a href="/terms" class="text-indigo-600 font-medium">Terms</a>
+        <a href="/data-deletion" class="hover:text-indigo-600">Data Deletion</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden inline-flex items-center px-3 py-2 border rounded">
+        <span>Menu</span>
+      </button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t bg-white">
+      <nav class="max-w-6xl mx-auto px-4 py-2 flex flex-col gap-2">
+        <a href="/" class="py-2">Home</a>
+        <a href="/privacy" class="py-2">Privacy</a>
+        <a href="/terms" class="py-2">Terms</a>
+        <a href="/data-deletion" class="py-2">Data Deletion</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="max-w-3xl mx-auto px-4 py-10">
+    <h1 class="text-3xl font-bold">Terms of Service</h1>
+    <div class="mt-6 space-y-6 bg-white border rounded-2xl p-6">
+      <section>
+        <h2 class="text-xl font-semibold">সার্ভিসের প্রকৃতি</h2>
+        <p class="mt-2">এই সার্ভিস স্বয়ংক্রিয়ভাবে সংবাদ-লিঙ্ক/সংক্ষেপ পোস্ট করে। সোর্স কনটেন্টের কপিরাইট সংশ্লিষ্ট প্রকাশকের—আমরা কেবল লিঙ্ক/উদ্ধৃতি শেয়ার করি।</p>
+      </section>
+      <section>
+        <h2 class="text-xl font-semibold">ব্যবহার শর্ত</h2>
+        <ul class="list-disc pl-6 mt-2 space-y-1 text-gray-700">
+          <li>তুমি যথাযথ অনুমতি নিয়ে Facebook Page সংযুক্ত করবে।</li>
+          <li>অবৈধ/ভুয়া খবর বা কমিউনিটি স্ট্যান্ডার্ড বিরোধী কনটেন্ট পোস্ট করা যাবে না।</li>
+          <li>আমরা সার্ভিস আপডেট/স্থগিত/বাতিল করার অধিকার সংরক্ষণ করি।</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="text-xl font-semibold">দায়বদ্ধতা সীমা</h2>
+        <p class="mt-2">সার্ভিস “as-is” ভিত্তিতে; কোনো সরাসরি/পরোক্ষ ক্ষতির জন্য আমরা দায়ী নই।</p>
+      </section>
+      <section>
+        <h2 class="text-xl font-semibold">যোগাযোগ</h2>
+        <p class="mt-2">ইমেল: <a href="mailto:hemel6850@gmail.com" class="text-indigo-600 underline">hemel6850@gmail.com</a></p>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-gray-600">© <span id="y"></span> প তে পত্রিকা. সর্বস্বত্ব সংরক্ষিত।</p>
+      <div class="flex items-center gap-4 text-sm">
+        <a href="/privacy" class="hover:text-indigo-600">Privacy</a>
+        <a href="/terms" class="text-indigo-600">Terms</a>
+        <a href="/data-deletion" class="hover:text-indigo-600">Data Deletion</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    document.getElementById("menuBtn").addEventListener("click", () => {
+      document.getElementById("mobileMenu").classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
