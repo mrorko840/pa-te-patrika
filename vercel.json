@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "^/$", "dest": "/index.html" },
+    { "src": "^/(privacy|terms|data-deletion)\\.html$", "dest": "/$1.html" }
+  ]
+}
